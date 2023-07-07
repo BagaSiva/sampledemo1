@@ -75,11 +75,14 @@ This document describes the vSphere automation in the ROME datacenter. The autom
 
    **Jenkins job URL:** [http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/](http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/)
 
-## VM Report
+## VM Report 
+
+**Jenkins job URL:** [http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_VM_Report/](http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_VM_Report/)
 1. Virtual machines created in the past week.
 2. Virtual machines with assigned owners created in the past week.
 3. Virtual machines created without assigned owners in the past week.
 4. Virtual machines deleted in the past week.
 5. VM usage report.
 
-An email notification will be sent to the specified recipients, including the aforementioned reports as attachments. In the event of any failures, a notification email will be triggered, containing the Jenkins job build log.
+An email notification will be sent to the specified recipients, including the aforementioned reports as attachments. 
+In the event of any failures, a notification email will be triggered, containing the Jenkins job build log.
