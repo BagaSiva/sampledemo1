@@ -8,7 +8,8 @@
   - [Create VM, Configure Hostname, and Configure IP4 Properties](#create-vm-configure-hostname-and-configure-ip4-properties)
   - [Delete VM](#delete-vm)
   - [Update Hostname and Static IP](#update-hostname-and-static-ip)
-- [VM Report](#vmreport)
+- [VM Report](#vm-report)
+
 ## Abstract
 
 This document describes the vSphere automation in the ROME datacenter. The automation client leverages vSphere Automation SDK for Java, PowerShell, VMware PowerCLI, and Bash scripts. It automates various vSphere admin tasks, including:
@@ -74,12 +75,11 @@ This document describes the vSphere automation in the ROME datacenter. The autom
 
    **Jenkins job URL:** [http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/](http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/)
 
-*VM Report*
----
-The Jenkins job http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_VM_Report/ will generated the following reports:
-- Virtual machines created in the past week.
-- Virtual machines with assigned owners created in the past week.
-- Virtual machines created without assigned owners in the past week.
-- Virtual machines deleted in the past week.
-- VM usage report.
+## VM Report
+1. Virtual machines created in the past week.
+2. Virtual machines with assigned owners created in the past week.
+3. Virtual machines created without assigned owners in the past week.
+4. Virtual machines deleted in the past week.
+5. VM usage report.
+
 An email notification will be sent to the specified recipients, including the aforementioned reports as attachments. In the event of any failures, a notification email will be triggered, containing the Jenkins job build log.
