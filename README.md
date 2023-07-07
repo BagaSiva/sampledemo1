@@ -76,9 +76,10 @@ This document describes the vSphere automation in the ROME datacenter. The autom
 
 *VM Report*
 ---
-The following reports will be generated as part of this process:
+The Jenkins job http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_VM_Report/ will generated the following reports:
 - Virtual machines created in the past week.
 - Virtual machines with assigned owners created in the past week.
 - Virtual machines created without assigned owners in the past week.
 - Virtual machines deleted in the past week.
 - VM usage report.
+An email notification will be sent to the specified recipients, including the aforementioned reports as attachments. In the event of any failures, a notification email will be triggered, containing the Jenkins job build log.
