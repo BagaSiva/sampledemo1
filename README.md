@@ -8,7 +8,7 @@
   - [Create VM, Configure Hostname, and Configure IP4 Properties](#create-vm-configure-hostname-and-configure-ip4-properties)
   - [Delete VM](#delete-vm)
   - [Update Hostname and Static IP](#update-hostname-and-static-ip)
-- [VM Report](#vm-report)
+- [VM Report](#vmreport)
 ## Abstract
 
 This document describes the vSphere automation in the ROME datacenter. The automation client leverages vSphere Automation SDK for Java, PowerShell, VMware PowerCLI, and Bash scripts. It automates various vSphere admin tasks, including:
@@ -73,6 +73,7 @@ This document describes the vSphere automation in the ROME datacenter. The autom
 4. Run the following Jenkins job to update the hostname and static IP for a given VM:
 
    **Jenkins job URL:** [http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/](http://bigfix-jenkins.nonprod.hclpnp.com:8080/view/Infrastructure/job/VCenter_Update_VM/)
+
 *VM Report*
 ---
 The following reports will be generated as part of this process:
